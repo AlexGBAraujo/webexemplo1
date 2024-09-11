@@ -6,16 +6,26 @@
     <title>Document</title>
     <style>
         body{
-            background-color: black;    
+            background-color: rgb(15, 24, 27);    
         }
 
         h1,h2{
-            color: #ffdb58;
+            color: #f5d769;
         }
 
-        #post1, #post2, #churrasco{
+        #post1, #post2, #churrasco, #tabela{
             color: white;
         }
+
+        td{
+            padding: 10px;
+        }
+
+        table, td, th{
+            border: solid white 1px;
+            border-radius: 57% 20% 70% 25%;
+        }
+
     </style>
 </head>
 <body>
@@ -38,5 +48,31 @@
             <li>Nome2</li>
         </ol>
     </div>
+    <table id="tabela">
+        <tr>
+            <th>Carne</th>
+            <th>2kg</th>
+            <th>36,00</th>
+        </tr>
+        <tr>
+            <td>Carne</td>
+            <td>2kg</td>
+            <td>35,00</td>
+        </tr>
+        <tr>
+            <td>Pão de Alho</td>
+            <td>2 pacotes</td>
+            <td>25,00</td>
+        </tr>
+        <tr>
+            <td>Linguiça</td>
+            <td>1kg</td>
+            <td>19,99</td>
+        </tr>
+        <tr id="eu">
+            <td colspan="2">Total</td>
+            <td>79,99</td>
+        </tr>
+    </table>
 </body>
 </html>
